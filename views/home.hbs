@@ -1,0 +1,11 @@
+{{#if user}}
+  <p>
+    Hello, {{user.username}}!
+  </p>
+  <h3>Recent Projects</h3>
+  <ul class="recent-repos">
+  </ul>
+{{else}}
+  <a href="/login/github">Login here</a>
+{{/if}}
+
