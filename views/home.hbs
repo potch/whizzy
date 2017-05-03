@@ -2,10 +2,16 @@
   <p>
     Hello, {{user.username}}!
   </p>
-  <h3>Recent Projects</h3>
+  <form action="/repoify" class="project-form" method="post">
+    <input name="project" placeholder="name of a GitHub project like potch/whizzy">
+    <button>Go</button>
+  </form>
+  <h2>Recent Projects</h2>
   <ul class="recent-repos">
   </ul>
 {{else}}
-  <a href="/login/github">Login here</a>
+  <h1 style="text-align: center"><a href="/login/github">Login here</a></h1>
+  <h2>This is a prototype!</h2>
+  <p>The code is demo-quality right now. Feel free to play around, but it's probaby a good idea to <a href="https://github.com/settings/applications">revoke access</a> to this app when you're finished.</p>
 {{/if}}
 

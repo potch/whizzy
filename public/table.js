@@ -1,5 +1,4 @@
 window.addEventListener('load', function () {
-  console.log('table');
   let tableEl = document.querySelector('[data-table-source]');
   let hot;
   

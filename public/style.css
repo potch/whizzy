@@ -27,6 +27,7 @@ body {
   height: 2em;
   border-radius: 1em;
   box-shadow: 0 0 1px #000;
+  vertical-align: middle;
 }
 
 .header {
@@ -87,4 +88,19 @@ body {
 
 .file-edit input {
   width: 400px;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+  padding: 1em;
+}
+
+.project-form input {
+  flex: 1 1 auto;
+  margin-right: 1em;
+}
+.project-form * {
+  font: inherit;
 }

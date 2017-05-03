@@ -301,4 +301,8 @@ app.post('/repo/:owner/:repo/save', function (req, res) {
   });
 });
 
+app.post('/repoify', function (req, res) {
+  res.redirect(`/repo/${req.body.project}`);
+});
+
 app.listen(3000);
