@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSV Conf Whizzy Demo</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="//docs.handsontable.com/bower_components/handsontable/dist/handsontable.full.css">
+  </head>
+  <body>
+    <header class="header">
+      <a href="/">Whizzy</a>    
+      {{#if user}}
+        <div class="user">
+          <img class="avatar" src="{{user._json.avatar_url}}">
+          {{user.username}}
+        </div>
+      {{/if}}
+    </header>
+    <section class="main">
+      {{{ body }}}
+    </section>
+    <script src="/repos.js"></script>
+    <script src="/table.js"></script>
+  </body>
+</html>

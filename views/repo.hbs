@@ -1,0 +1,8 @@
+<h2>Viewing Project {{repoString}}</h2>
+<ul class="file-list" data-repo="{{repoString}}">
+{{#each files}}
+  <li>
+    <a href="/repo/{{repository.full_name}}/view?path={{path}}">{{path}}</a>
+  </li>  
+{{/each}}
+</ul>

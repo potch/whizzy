@@ -1,0 +1,106 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.4;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+  box-shadow: 0 0 1px #000;
+  vertical-align: middle;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #666;
+  padding: .5em 1em;
+}
+
+.main {
+  padding: .5em;
+  flex: 1 1 auto;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.data-table {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+.data-table.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-list {
+  list-style-type: none;
+  border: 1px solid #aaa;
+  padding: 0;
+}
+.file-list li {
+  padding: .25em .5em;
+}
+.file-list li + li {
+  border-top: 1px solid #aaa;
+}
+
+.file-edit {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: .5em 0;
+}
+
+.file-edit * {
+  margin: 0 .5em;
+}
+
+.file-edit h2 {
+  flex: 1 1 auto;
+}
+
+.file-edit input {
+  width: 400px;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+  padding: 1em;
+}
+
+.project-form input {
+  flex: 1 1 auto;
+  margin-right: 1em;
+}
+.project-form * {
+  font: inherit;
+}

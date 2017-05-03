@@ -1,0 +1,12 @@
+<form class="file-edit" action="save" method="post">
+  <h2>Viewing File {{path}}</h2>
+  <input placeholder="describe your changes" name="message" required>
+  <input type="hidden" name="contents">
+  <input type="hidden" name="path" value="{{path}}">
+  <button>Submit</button>
+</form>
+<div class="data-table loading" data-table-source="{{contentURL}}">
+  Loading...
+</div>
+<script src="//docs.handsontable.com/bower_components/handsontable/dist/handsontable.full.js"></script>
+<script src="/vendor/papaparse"></script>
